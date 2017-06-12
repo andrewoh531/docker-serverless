@@ -1,0 +1,5 @@
+steps:
+  - label: 'Build and push :hammer: :shipit:'
+    command:
+      - docker build -t andrewoh531/serverless:${BUILDKITE_BUILD_NUMBER} .
+      - docker push andrewoh531/serverless:${BUILDKITE_BUILD_NUMBER}
